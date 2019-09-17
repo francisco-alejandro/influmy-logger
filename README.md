@@ -10,10 +10,7 @@ So, first and only step it is import constructor and call it.
     export  default  new  Logger({  level: levels.info  });
 
 A logger accepts an object with following parameters:
-|Name|Default|Description|
-|--|--|--|
-| level |  info| Log only if level is less than or equal to this level
-
+- **level**: Log only if level is less than or equal to this level. By default set to `info`.
   
 Available levels:
 
