@@ -1,0 +1,31 @@
+{
+  "name": "logger",
+  "version": "0.1.0",
+  "description": "Winston logger wrapper with console transport",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "build": "babel src -d dist"
+  },
+  "keywords": [
+    "Logger"
+  ],
+  "author": "Francisco Alejandro Jurado Pérez",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.0",
+    "@babel/core": "7.6.0",
+    "@babel/node": "7.6.1",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.6.0",
+    "babel-eslint": "10.0.3",
+    "babel-plugin-module-resolver": "3.2.0",
+    "eslint": "6.4.0",
+    "eslint-import-resolver-babel-module": "5.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-promise": "4.2.1"
+  }
+}
