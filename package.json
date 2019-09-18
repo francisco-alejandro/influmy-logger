@@ -1,11 +1,21 @@
 {
   "name": "@influmy/logger",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Winston logger wrapper with console transport",
   "main": "dist/index.js",
   "scripts": {
     "start": "babel-node src/index.js",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "test": "ENV=test jest --no-cache",
+    "test:debug": "npm test -- --debug",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "test:coverwatch": "npm test -- --watch --coverage",
+    "test:current": "npm test -- -o",
+    "test:domain": "npm test -- -t",
+    "release:major": "npm version major",
+    "release:minor": "npm version minor",
+    "release:patch": "npm version patch"
   },
   "keywords": [
     "Logger"
@@ -26,7 +36,8 @@
     "eslint": "6.4.0",
     "eslint-import-resolver-babel-module": "5.1.0",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-promise": "4.2.1"
+    "eslint-plugin-promise": "4.2.1",
+    "jest": "24.9.0"
   },
   "repository": {
     "type": "git",
