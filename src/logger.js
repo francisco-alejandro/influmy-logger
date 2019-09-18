@@ -6,7 +6,7 @@ const setLevel = ({ level }) => {
   const possible = Object.keys(levels).find(key => levels[key] === level);
 
   return possible || setLevel({ level: levels.info });
-}
+};
 
 function Logger({ level }) {
   return winston.createLogger({
