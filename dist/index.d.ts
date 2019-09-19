@@ -11,7 +11,13 @@ interface LoggerOption {
   level: number,
 }
 
-declare function Logger(options: LoggerOption): any
+declare class Logger {
+  constructor(options: LoggerOption);
+  error(...params: any[]): void;
+  info(...params: any[]): void;
+  debug(...params: any[]): void;
+}
+
 declare const levels: Levels;
 
 export default Logger;
