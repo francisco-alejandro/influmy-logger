@@ -3,5 +3,10 @@
   "plugins": [
     ["@babel/plugin-proposal-class-properties", { "loose": true}],
     ["module-resolver", { "root": ["./src"] }]
+  ],
+  "ignore": [
+    "**/__tests__",
+    "**/__mocks__",
+    "**/*.test.js"
   ]
 }
