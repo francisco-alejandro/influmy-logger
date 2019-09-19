@@ -8,13 +8,13 @@ interface Levels {
 }
 
 interface LoggerOption {
-  level: Levels,
+  level: number,
 }
 
-export interface LoggerModule {
-  (levels: Levels): any;
-  Logger: (options: LoggerOption) => any;
-}
+declare function Logger(options: LoggerOption): any
+declare const levels: Levels;
 
-declare const logger: LoggerModule;
-export default logger;
+export default Logger;
+export {
+  levels,
+}
