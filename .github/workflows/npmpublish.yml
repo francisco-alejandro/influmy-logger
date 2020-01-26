@@ -1,8 +1,9 @@
-name: Node.js Package
+name: Npm pubish action
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+    - master
 
 jobs:
   build:
