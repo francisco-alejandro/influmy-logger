@@ -1,6 +1,6 @@
 {
   "name": "@influmy/logger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Winston logger wrapper with console transport",
   "main": "dist/index.js",
   "scripts": {
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.influmy.com:alejandro.jurado/logger.git"
+    "url": "git@github.com:francisco-alejandro/influmy-logger.git"
   }
 }
