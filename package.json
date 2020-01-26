@@ -1,6 +1,6 @@
 {
   "name": "@influmy/logger",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Winston logger wrapper with console transport",
   "main": "dist/index.js",
   "scripts": {
